@@ -2,17 +2,14 @@ FROM python:3.10-slim-buster
 
 WORKDIR /app
 
-# Copy your requirements first for better caching
-COPY requirements.txt .
+# Copy all files from your local folder to the container
+COPY . /app
 
-# Install dependencies
+# Install the exact versions from your requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the rest of your application code
-COPY . .
-
-# Expose the port your app runs on
+# FastAPI needs port 8080 (or whichever port you prefer)
 EXPOSE 8080
 
-# Command to run your application
-CMD ["python3", "app.py"]
+# The command to start your FastAPI app
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8080"]
