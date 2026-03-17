@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+*.egg-info/
+
+# Data (PDF is large, optional)
+data/
+
+# Node
+frontend/node_modules/
+frontend/build/
+
+# VS Code
+.vscode/
+
+# Anaconda
+medicalbot/
+
+# Pinecone/ML
+*.bin
+*.pt
