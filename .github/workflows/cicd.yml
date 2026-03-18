@@ -15,7 +15,7 @@ jobs:
       - name: Build React Frontend
         run: |
           cd frontend
-          npm install
+          npm ci --legacy-peer-deps
           npm run build
 
   build-and-push:
