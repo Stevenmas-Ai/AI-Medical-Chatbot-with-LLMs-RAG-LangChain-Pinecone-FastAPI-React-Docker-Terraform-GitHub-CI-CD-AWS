@@ -3,7 +3,7 @@ import axios from "axios"
 import Chat from "./components/Chat"
 import Header from "./components/Header"
 
-const API_URL = "http://localhost:8000"
+const API_URL = "http://3.89.39.140:8000"
 
 function App() {
   const [messages, setMessages] = useState([
