@@ -2,7 +2,6 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-# Install Node.js more efficiently
 RUN apt-get update && apt-get install -y --no-install-recommends \
     nodejs \
     npm \
@@ -14,7 +13,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Build React frontend
-RUN cd frontend && npm install && npm run build && \
+RUN cd frontend && npm ci --legacy-peer-deps && npm run build && \
     mkdir -p ../build && cp -r build/* ../build/ && \
     rm -rf node_modules
 
