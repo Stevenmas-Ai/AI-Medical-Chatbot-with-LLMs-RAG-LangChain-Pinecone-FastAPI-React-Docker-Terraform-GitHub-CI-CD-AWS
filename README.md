@@ -4,6 +4,9 @@
 ## 📋 Overview
 A production-ready RAG-based medical chatbot that answers medical questions using the Gale Encyclopedia of Medicine (637 pages). Users can switch between Groq (LLaMA 3.1) and OpenAI GPT-4o as the LLM provider.
 
+![alt text](linkedinpost.png)
+![alt text](medical_chatbot_architecture.jpg)
+
 ## 🛠️ Tech Stack
 - **Backend:** Python, FastAPI
 - **Frontend:** React
