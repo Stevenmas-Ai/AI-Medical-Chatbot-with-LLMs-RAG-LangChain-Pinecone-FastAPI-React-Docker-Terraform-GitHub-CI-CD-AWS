@@ -24,7 +24,7 @@ resource "aws_ecr_repository" "medical_chatbot" {
 # Key Pair
 resource "aws_key_pair" "medicalbot_key" {
   key_name   = "medicalbot-key"
-  public_key = file("C:/Users/mark1/.ssh/medicalbot.pub")
+  public_key = file("///.ssh/medicalbot.pub")
 }
 
 # Security Group
