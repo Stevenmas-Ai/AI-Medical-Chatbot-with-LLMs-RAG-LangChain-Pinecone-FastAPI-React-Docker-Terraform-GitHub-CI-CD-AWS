@@ -12,5 +12,6 @@ pypdf==5.6.1
 python-dotenv==1.1.0
 pinecone
 transformers==4.44.0
+numpy<2
 --extra-index-url https://download.pytorch.org/whl/cpu
 torch==2.2.0+cpu
