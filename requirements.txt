@@ -2,14 +2,15 @@ langchain==0.3.26
 langchain-community==0.3.26
 langchain-openai==0.3.24
 langchain-pinecone==0.2.8
-langchain-huggingface
+langchain-huggingface==0.1.2
 langchain-groq
 fastapi
 uvicorn
 python-multipart
-sentence-transformers
+sentence-transformers==3.0.1
 pypdf==5.6.1
 python-dotenv==1.1.0
 pinecone
+transformers==4.44.0
 --extra-index-url https://download.pytorch.org/whl/cpu
 torch==2.2.0+cpu
